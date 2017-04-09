@@ -1,0 +1,42 @@
+{
+  "type" : "SUCCESS",
+  "msg" : "Container policyquote successfully called.",
+  "result" : {
+    "execution-results" : {
+      "results" : [ {
+        "key" : "driver",
+        "value" : {"com.redhat.gpte.policyquote.model.Driver":{
+  "id" : "1",
+  "driverName" : "John Doe",
+  "age" : 26,
+  "ssn" : "789456",
+  "dlNumber" : "123456",
+  "numberOfAccidents" : 2,
+  "numberOfTickets" : 1,
+  "creditScore" : 0
+}}
+      }, {
+        "key" : "policy",
+        "value" : {"com.redhat.gpte.policyquote.model.Policy":{
+  "requestDate" : null,
+  "policyType" : "AUTO",
+  "vehicleYear" : 1999,
+  "price" : 300,
+  "priceDiscount" : 0,
+  "driver" : "1"
+}}
+      } ],
+      "facts" : [ {
+        "key" : "driver",
+        "value" : {"org.drools.core.common.DefaultFactHandle":{
+  "external-form" : "0:1:2026629049:2026629049:1:DEFAULT:NON_TRAIT:com.redhat.gpte.policyquote.model.Driver"
+}}
+      }, {
+        "key" : "policy",
+        "value" : {"org.drools.core.common.DefaultFactHandle":{
+  "external-form" : "0:2:122346548:122346548:3:DEFAULT:NON_TRAIT:com.redhat.gpte.policyquote.model.Policy"
+}}
+      } ]
+    }
+  }
+}
